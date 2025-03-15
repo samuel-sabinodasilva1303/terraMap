@@ -1,4 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    output: "export",
+    images: {
+      unoptimized: true,
+    },
+    basePath: "/Projeto-Integrador-III",
+    assetPrefix: "/Projeto-Integrador-III/",
+  };
+  
+  module.exports = nextConfig;
+  
