@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: "export",
+    output: 'export',
     images: {
-      unoptimized: true,
+      unoptimized: true, 
     },
-    basePath: "/Projeto-Integrador-III",
+    basePath: "/Projeto-Integrador-III", 
     assetPrefix: "/Projeto-Integrador-III/",
   };
   
