@@ -15,7 +15,7 @@ const center = {
 
 export default function Map() {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+    googleMapsApiKey: "AIzaSyCj4nV0Kl9E36DN5VlYMEER9UwkkKMveag",
   });
 
   if (!isLoaded) return <p>Carregando mapa...</p>;
