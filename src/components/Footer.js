@@ -1,7 +1,9 @@
+import styles from "./Footer.module.css"
+
 export default function Footer() {
   return (
-    <footer>
-      <p>© 2025 Projeto Integrador III. Todos os direitos reservados.</p>
+    <footer className={styles["footer--main"]}>
+      <p>© 2025 Projeto Integrador III</p>
     </footer>
   );
 }

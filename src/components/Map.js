@@ -1,11 +1,11 @@
-"use client"; // Garante que o componente roda no cliente
+"use client";
 
 import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
-//import styles from "./Map.module.css";
+import styles from "./Map.module.css";
 
 const containerStyle = {
   width: "100%",
-  height: "500px",
+  height: "85vh",
 };
 
 const center = {

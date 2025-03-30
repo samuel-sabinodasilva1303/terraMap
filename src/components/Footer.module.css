@@ -1,0 +1,15 @@
+.footer--main{
+    background: linear-gradient(45deg, #323436, #1E88E5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    font-size: 14px;
+
+}
