@@ -27,7 +27,6 @@ export default function Map() {
     }
   }, [isLoaded]);
 
-  if (loadError) return <p>Erro ao carregar o mapa!</p>;
   if (!isMapLoaded) return <p>Carregando mapa...</p>;
 
   return (
