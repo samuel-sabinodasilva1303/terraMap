@@ -1,6 +1,7 @@
 "use client";
 
 import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
+import { useState, useEffect } from "react";
 import styles from "./Map.module.css";
 
 const containerStyle = {
@@ -14,11 +15,20 @@ const center = {
 };
 
 export default function Map() {
-  const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyCj4nV0Kl9E36DN5VlYMEER9UwkkKMveag",
+  const { isLoaded, loadError } = useLoadScript({
+    googleMapsApiKey: "AIzaSyCj4nV0Kl9E36DN5VlYMEER9UwkkKMveag", 
   });
 
-  if (!isLoaded) return <p>Carregando mapa...</p>;
+  const [isMapLoaded, setIsMapLoaded] = useState(false);
+
+  useEffect(() => {
+    if (isLoaded) {
+      setIsMapLoaded(true);
+    }
+  }, [isLoaded]);
+
+  if (loadError) return <p>Erro ao carregar o mapa!</p>;
+  if (!isMapLoaded) return <p>Carregando mapa...</p>;
 
   return (
     <div>
