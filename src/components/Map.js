@@ -23,7 +23,7 @@ export default function Map() {
 
   useEffect(() => {
     if (isLoaded) {
-      setIsMapLoaded(true);
+      setIsMapLoaded(true); // Garante que o mapa seja carregado apenas no cliente
     }
   }, [isLoaded]);
 
