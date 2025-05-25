@@ -2,14 +2,12 @@
   "name": "terraMap",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/samuel-sabinodasilva1303/Projeto-Integrador-III",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "deploy": "next build && gh-pages -d out"
-  },
+"scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "lint": "next lint"
+},
   "dependencies": {
     "@react-google-maps/api": "^2.20.6",
     "firebase": "^11.8.1",
